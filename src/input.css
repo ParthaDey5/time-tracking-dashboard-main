@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary Colors */
+  --purple-600: hsl(246, 80%, 60%);
+  --orange-300-work: hsl(15, 100%, 70%);
+  --blue-300-play: hsl(195, 74%, 62%);
+  --pink-400-study: hsl(348, 100%, 68%);
+  --green-400-exercise: hsl(145, 58%, 55%);
+  --purple-700-social: hsl(264, 64%, 52%);
+  --yellow-300-self-care: hsl(43, 84%, 65%);
+  
+  /* Neutral Colors */
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+}
+html{
+    @apply text-[1.25vw];
+}
+
+body {
+    @apply relative center min-h-screen max-w-full w-full lg:aspect-[1440/1024] aspect-[375/1469] lg:px-[9.1rem] px-[5rem];
+  font-family: 'Rubik', sans-serif;
+  background: var(--navy-950);
+  
+  color: white;
+}
+main{
+  @apply w-full ;
+}
+.dashboard {
+    @apply w-full grid lg:place-items-start place-items-center lg:grid-cols-[14rem_2fr] grid-cols-1 gap-x-[2rem] gap-y-[8rem];
+
+}
+
+.dashboard__profile {
+    @apply lg:w-[14rem] w-full lg:h-[30rem] h-[41rem] lg:rounded-[0.5rem] rounded-[4rem] ;
+  background: var(--navy-950);
+  
+  
+  
+}
+
+.profile__info {
+  @apply rounded-[15px] lg:col-x-start row-y-center lg:gap-y-[3rem] gap-x-[3.7rem] lg:px-[1.85rem] lg:pt-[2.2rem] lg:pb-[3.5rem] p-[7rem]  ;
+  background: var(--navy-900);
+}
+
+.profile__img {
+  @apply lg:w-[4.5rem] w-[14rem] aspect-square rounded-full outline outline-white;
+}
+
+.profile__text{
+  @apply col-x-start;
+}
+
+.profile__text p {
+  @apply lg:text-[0.875rem] text-[2.875rem] lg:mb-[0.2rem] mb-[1rem];
+  color: hsl(236, 100%, 87%);
+  
+}
+
+.profile__text h1 {
+  @apply lg:text-[2.2rem] text-[5.125rem] leading-[138%] ;
+  font-weight: 300;
+}
+
+.profile__timeframe {
+   @apply lg:col-x-start row-x-between row-y-center lg:gap-y-[0.8rem] gap-x-[1.35rem] lg:px-[1.9rem] lg:pt-[1.8rem] lg:pb-0 p-[5rem] ;
+   
+
+}
+
+.timeframe__btn {
+   @apply text-left lg:text-[0.95rem] text-[3.875rem] font-light cursor-custom ;
+  background: none;
+  border: none;
+  color: hsl(236, 100%, 87%);
+  transition: color 0.3s;
+}
+
+.timeframe__btn:hover {
+  color: white;
+}
+
+.timeframe__btn--active {
+  color: white;
+}
+
+.dashboard__activities {
+  @apply w-full grid lg:grid-cols-3 grid-cols-1 lg:gap-x-[1.7rem] lg:gap-y-[2rem] gap-y-[5rem];
+  
+}
+
+.activity__card {
+  @apply relative lg:bg-[length:4.5rem_4.5rem] bg-[length:15.5rem_15.5rem] lg:bg-[top_-0.5rem_right_1rem] bg-[top_-2.7rem_right_5rem] bg-no-repeat lg:h-[14rem] h-[34.5rem] lg:rounded-[0.7rem] rounded-[4rem] cursor-custom;
+  background-color: var(--navy-900);
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.activity__card:hover {
+  transform: translateY(-0.4rem);
+  background-color: var(--purple-500);
+}
+
+.activity__card:nth-child(1) {
+  background-color: var(--orange-300-work);
+}
+
+.activity__card:nth-child(2) {
+  background-color: var(--blue-300-play);
+}
+
+.activity__card:nth-child(3) {
+  background-color: var(--pink-400-study);
+}
+
+.activity__card:nth-child(4) {
+  background-color: var(--green-400-exercise);
+}
+
+.activity__card:nth-child(5) {
+  background-color: var(--purple-700-social);
+}
+
+.activity__card:nth-child(6) {
+  background-color: var(--yellow-300-self-care);
+}
+
+.activity__content {
+  @apply  lg:mt-[3rem] mt-[7.7rem] h-full lg:rounded-[0.7rem] rounded-[4rem] lg:p-[1.6rem] col-y-start pt-[5.5rem];
+  background: var(--navy-900);
+
+  transition: background-color 0.3s;
+}
+
+.activity__card:hover .activity__content {
+  background: var(--purple-500);
+}
+
+.activity__header {
+  @apply row-x-between row-y-center lg:px-0 px-[5.3rem] ;
+  
+
+}
+
+.activity__header h3 {
+  @apply lg:text-[1rem] text-[4rem] ;
+  
+}
+
+.activity__ellipsis {
+  @apply bg-no-repeat bg-center lg:w-[1rem] w-[4.5rem];
+  
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: block;
+}
+
+
+.activity__ellipsis:hover {
+  opacity: 1;
+}
+
+.activity__time {
+  @apply lg:col-x-start row-y-center row-x-between lg:gap-y-[0rem] gap-x-[1rem] lg:px-0 px-[5rem];
+  
+}
+
+.activity__current {
+  @apply lg:text-[3.2rem] text-[6.5rem] tracking-wide;
+  font-weight: 300;
+}
+
+.activity__previous {
+  @apply lg:text-[0.85rem] text-[2.125rem];
+  color: hsl(236, 100%, 87%);
+}
+

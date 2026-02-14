@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/output.css">
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <img src="/design/desktop-design.jpg" alt="" class="w-full h-full absolute top-0 -z-[999] opacity-50 lg:block hidden">
+  <img src="/design/mobile-design.jpg" alt="" class="w-full h-full absolute top-0 -z-[999] opacity-40 lg:hidden">
+  
+   <main class="dashboard">
+    <section class="dashboard__profile">
+      <div class="profile__info">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="profile__img">
+        <div class="profile__text ">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="profile__timeframe">
+        <button data-timeframe="daily" class="timeframe__btn">Daily</button>
+        <button data-timeframe="weekly" class="timeframe__btn timeframe__btn--active">Weekly</button>
+        <button data-timeframe="monthly" class="timeframe__btn">Monthly</button>
+      </div>
+    </section>
+
+    <section class="dashboard__activities">
+      <!-- Activity cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+</body>
+</html>
