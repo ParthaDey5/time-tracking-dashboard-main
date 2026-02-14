@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/ParthaDey5/time-tracking-dashboard-main)
+- Live Site URL: (https://time-tracking-dashboard-main-one.vercel.app)
 
 ## My process
 
@@ -123,40 +123,13 @@ Areas I want to focus on in future projects:
 - [BEM Documentation](http://getbem.com/) - Clear guide to BEM methodology
 - [JavaScript Info](https://javascript.info/) - Modern JavaScript tutorial with detailed explanations
 
-### AI Collaboration
-
-I worked closely with Cascade AI throughout this project, which significantly enhanced my learning experience:
-
-**Tools Used:**
-- Cascade AI as primary coding assistant
-- AI-guided debugging and problem-solving
-- Real-time code review and optimization suggestions
-
-**How AI Helped:**
-- **Concept Explanation**: Complex JavaScript concepts like `reduce()`, async/await, and DOM manipulation were explained with practical examples
-- **Debugging Assistance**: AI helped identify and fix issues with Tailwind CSS configuration, custom cursor implementation, and responsive design problems
-- **Code Organization**: Guided me toward best practices like function organization and proper commenting
-- **Learning Resources**: Provided targeted explanations and resources for concepts I struggled with
-
-**What Worked Well:**
-- AI's ability to break down complex problems into manageable steps
-- Real-time feedback on code quality and best practices
-- Patient explanation of concepts with multiple examples
-- Encouragement to think through problems rather than just providing solutions
-
-**Challenges:**
-- Initial tendency to rely too heavily on AI-generated code
-- Learning to balance AI assistance with independent problem-solving
-- Understanding when to ask for help vs. working through problems independently
-
-This collaboration taught me that AI is most effective when used as a learning partner rather than just a code generator.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ParthaDey5](https://www.frontendmentor.io/profile/ParthaDey5)
 
 ## Acknowledgments
 
 Special thanks to the Frontend Mentor community for providing this challenging and educational project. The detailed design specifications and style guide made it possible to create a professional-looking dashboard that closely matches the original design.
 
-I also want to acknowledge the helpful feedback and guidance from the AI assistant, which accelerated my learning process and helped me understand complex concepts more deeply.
+
